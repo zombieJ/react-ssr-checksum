@@ -28,7 +28,8 @@
     "compile": "father build",
     "prepublishOnly": "npm run compile && np --no-cleanup --yolo --no-publish",
     "lint": "eslint src/ examples/ --ext .tsx,.ts,.jsx,.js",
-    "test": "father test"
+    "test": "father test",
+    "now-build": "npm run build"
   },
   "peerDependencies": {
     "react": "*",
@@ -55,6 +56,7 @@
   },
   "dependencies": {
     "classnames": "2.x",
+    "md5": "^2.2.1",
     "prop-types": "^15.5.8",
     "rc-animate": "^2.9.2",
     "rc-util": "^4.9.0",
