@@ -18,6 +18,8 @@ const code = getCode(ssrText);
 Client side use `CheckSum` component:
 
 ```jsx
+import CheckSum from 'react-ssr-checksum';
+
 hydrate(
   <CheckSum checksumCode={code}>
     <App />
