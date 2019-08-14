@@ -22,13 +22,7 @@ const Demo: React.FC<{}> = () => {
   const domRef = React.useRef<HTMLDivElement>();
 
   React.useEffect(() => {
-    setSSRString(
-      renderToString(
-        <CheckSum>
-          <Content title="English" content={ssrContent} />
-        </CheckSum>,
-      ),
-    );
+    setSSRString(renderToString(<Content title="English" content={ssrContent} />));
 
     // Insert dom node
     domRef.current = document.createElement('div');

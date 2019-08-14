@@ -12,7 +12,7 @@ const CheckSum: React.FC<CheckSumProps> = ({ checksumCode, children }) => {
   const [showContent, setShowContent] = React.useState(true);
 
   // Force re-render
-  React.useEffect(() => {
+  React.useLayoutEffect(() => {
     if (!showContent) {
       setShowContent(true);
     }
